@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "name": "content-mesh-presentation",
+  "alias": ["content-mesh.now.sh"],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "headers": {
+        "cache-control": "max-age=31536000,s-maxage=31536000,immutable"
+      },
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "headers": { "cache-control": "s-maxage=0" },
+      "dest": "public/index.html"
+    }
+  ]
+}

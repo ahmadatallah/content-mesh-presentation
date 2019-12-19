@@ -5,7 +5,8 @@
   "scripts": {
     "start": "mdx-deck deck.mdx",
     "build": "mdx-deck build deck.mdx",
-    "help": "mdx-deck"
+    "help": "mdx-deck",
+    "now-build": "yarn run build"
   },
   "devDependencies": {
     "mdx-deck": "^3.0.13"
